@@ -8,7 +8,7 @@ AHT = AHT21(I2C(1, scl=Pin(15), sda=Pin(14), freq=400000))
 FILE = open("data.csv", "a")
 
 # File Setup
-FILE.write("Time, Temp, Hum\n")
+FILE.write("Temp, Hum\n")
 
 # Data Extract Function
 def data_extract():
