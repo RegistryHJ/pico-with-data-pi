@@ -10,4 +10,4 @@ OLED.text('Hello, World 2!', 0, 10)
 OLED.text('Hello, World 3!', 0, 20)
 
 # Show OLED
-oled.show()
+OLED.show()
