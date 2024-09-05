@@ -29,7 +29,7 @@ def AHT_Sensor():
 # ENS Sensor Function
 def ENS_Sensor():
   co2: int = ENS.CO2
-  OLED.text(f"CO2: {str(co2):.2f} ppm", 0, 20)
+  OLED.text(f"CO2: {co2} ppm", 0, 20)
 
 # Main Loop
 while True:

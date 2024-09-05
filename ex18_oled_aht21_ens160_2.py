@@ -40,12 +40,12 @@ def aht_2_Sensor():
 # ENS_1 Sensor Function
 def ens_1_Sensor():
   co2: int = ENS_1.CO2
-  OLED.text(f"CO2: {str(co2):.2f} ppm", 0, 20)
+  OLED.text(f"CO2: {co2} ppm", 0, 20)
 
 # ENS_2 Sensor Function
 def ens_2_Sensor():
   co2: int = ENS_2.CO2
-  OLED.text(f"CO2: {str(co2):.2f} ppm", 0, 55)
+  OLED.text(f"CO2: {co2} ppm", 0, 55)
 
 # Main Loop
 while True:
