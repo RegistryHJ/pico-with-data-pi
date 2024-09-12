@@ -5,7 +5,7 @@ import os
 
 # Constants
 AHT = AHT21(I2C(1, scl=Pin(15), sda=Pin(14), freq=400000))
-FILE = open("data.csv", "a")
+FILE = open("ex16.csv", "a")
 
 # File Setup
 FILE.write("Temp, Hum\n")
