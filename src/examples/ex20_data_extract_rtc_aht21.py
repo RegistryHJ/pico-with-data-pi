@@ -21,11 +21,12 @@ def data_extract():
     hum, temp = rht
     time = DS.get_time()
     OLED.fill(0)
-    OLED.text(f"Time: {time[0]}/{time[1]}/{time[2]} {time[3]}:{time[4]}:{time[5]}", 0, 0)
-    OLED.text(f"Temp: {temp:.2f} Deg", 0, 10)
-    OLED.text(f"Hum: {hum:.2f} %", 0, 20)
+    OLED.text(f"Date: {time[0]}-{time[1]}-{time[2]}", 0, 0)
+    OLED.text(f"Time: {time[3]}:{time[4]}:{time[5]}", 0, 10)
+    OLED.text(f"Temp: {temp:.2f} Deg", 0, 20)
+    OLED.text(f"Hum: {hum:.2f} %", 0, 30)
     OLED.show()
-    FILE.write(f"{time[0]}/{time[1]}/{time[2]} {time[3]}:{time[4]}:{time[5]}, {temp:.2f}, {hum:.2f}\n")
+    FILE.write(f"{time[0]}-{time[1]}-{time[2]} {time[3]}:{time[4]}:{time[5]}, {temp:.2f}, {hum:.2f}\n")
     sleep(1)
 
 # Try-Except-Finally Block
