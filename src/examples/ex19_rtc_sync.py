@@ -7,7 +7,7 @@ from wlan_config import WLANConfig
 from ds3231 import DS3231
 
 # Constants
-SSID, PASSWORD = WLANConfig.get_wlan_kcce()
+SSID, PASSWORD = WLANConfig.get_wlan_ai_2()
 WLAN_0 = WLAN(STA_IF)
 RTC = RTC()
 DS = DS3231(I2C(0, scl=Pin(5), sda=Pin(4)))
