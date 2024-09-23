@@ -11,9 +11,6 @@ DS = DS3231(I2C(0, scl=Pin(5), sda=Pin(4), freq=400000))
 OLED = SSD1306_I2C(128, 64, I2C(0, scl=Pin(5), sda=Pin(4), freq=400000))
 FILE = open("ex20.csv", "a")
 
-# File Setup
-FILE.write("Time, Temp, Hum\n")
-
 # Data Extract Function
 def data_extract():
   while True:
@@ -27,7 +24,7 @@ def data_extract():
     OLED.text(f"Hum: {hum:.2f} %", 0, 30)
     OLED.show()
     FILE.write(f"{time[0]}-{time[1]}-{time[2]} {time[3]}:{time[4]}:{time[5]}, {temp:.2f}, {hum:.2f}\n")
-    sleep(1)
+    sleep(60)
 
 # Try-Except-Finally Block
 try:
