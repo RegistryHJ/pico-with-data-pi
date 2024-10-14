@@ -1,18 +1,26 @@
+from utime import sleep
+from network import WLAN, STA_IF
+
 class WLANConfig:
-  @staticmethod
-  def get_wlan_sen():
-    ssid = "senWiFi_Free"
-    password = "senhs2022@"
-    return ssid, password
+  # Constructor
+  def __init__(self, ssid, password):
+    self.ssid, self.password = ssid, password
+    self.wlan_0 = WLAN(STA_IF)
+    self.wlan_0.active(True)
+    self.wlan_0.connect(self.ssid, self.password)
 
-  @staticmethod
-  def get_wlan_ai_1():
-    ssid = "AI1"
-    password = "hsg12345"
-    return ssid, password
+  # connect Function
+  def connect(self):
+    self.connect_status = False
+    connection_count = 0
 
-  @staticmethod
-  def get_wlan_ai_2():
-    ssid = "AI2"
-    password = "hsg12345"
-    return ssid, password
+    while True:
+      if self.wlan_0.status() != 3:
+        connection_count = connection_count + 1
+        print(f"Connection Count: {connection_count}")
+      else:
+        self.connect_status = True
+        self.ip_address = self.wlan_0.ifconfig()[0]
+        print(f"WLAN Connected! SSID: {self.ssid}, IP: {self.ip_address}")
+        break
+      sleep(1)
