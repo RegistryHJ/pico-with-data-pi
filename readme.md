@@ -133,5 +133,9 @@ Configure is Done.
       <td><a href="./src/examples/ex24_data_analysis.ipynb">ex24_data_analysis.ipynb</a></td>
       <td>Implement Data analysis with data.csv extracted by running 1.0.0-release in colab</td>
     </tr>
+    <tr>
+      <td><a href="./src/examples/ex25_environment_analysis.ipynb">ex25_environment_analysis.ipynb</a></td>
+      <td>Implement Plots to compare data_ai.csv and data_multi.csv in colab</td>
+    </tr>
   </tbody>
 </table>
