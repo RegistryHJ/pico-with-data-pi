@@ -83,7 +83,7 @@ Configure is Done.
     </tr>
     <tr>
       <td><a href="./src/examples/ex12_aht21_sensor.py">ex12_aht21_sensor.py</a></td>
-      <td>Implement Air-humidity-temperature sensor</td>
+      <td>Implement AHT sensor</td>
     </tr>
     <tr>
       <td><a href="./src/examples/ex13_ens160_sensor.py">ex13_ens160_sensor.py</a></td>
@@ -99,15 +99,15 @@ Configure is Done.
     </tr>
     <tr>
       <td><a href="./src/examples/ex16_data_extract_aht21.py">ex16_data_extract_aht21.py</a></td>
-      <td>Implement Data extract with Air-humidity-temperature Sensor</td>
+      <td>Implement Data extract with AHT Sensor</td>
     </tr>
     <tr>
       <td><a href="./src/examples/ex17_oled_aht21_ens160_1.py">ex17_oled_aht21_ens160_1.py</a></td>
-      <td>Implement OLED display show with 1 Air-humidity-temperature Sensor and Gas Sensor</td>
+      <td>Implement OLED display show with 1 AHT Sensor and Gas Sensor</td>
     </tr>
     <tr>
       <td><a href="./src/examples/ex18_oled_aht21_ens160_2.py">ex18_oled_aht21_ens160_2.py</a></td>
-      <td>Implement OLED display show with 2 Air-humidity-temperature Sensor and Gas Sensor</td>
+      <td>Implement OLED display show with 2 AHT Sensor and Gas Sensor</td>
     </tr>
     <tr>
       <td><a href="./src/examples/ex19_rtc_sync.py">ex19_rtc_sync.py</a></td>
@@ -115,7 +115,7 @@ Configure is Done.
     </tr>
     <tr>
       <td><a href="./src/examples/ex20_data_extract_rtc_aht21.py">ex20_data_extract_rtc_aht21.py</a></td>
-      <td>Implement Data extract with Air-humidity-temperature Sensor and RTC time</td>
+      <td>Implement Data extract with AHT Sensor and RTC time</td>
     </tr>
     <tr>
       <td><a href="./src/examples/ex21_colab_with_python.ipynb">ex21_colab_with_python.ipynb</a></td>
@@ -127,7 +127,11 @@ Configure is Done.
     </tr>
     <tr>
       <td><a href="./src/examples/ex23_matplotlib_aht21.ipynb">ex23_matplotlib_aht21.ipynb</a></td>
-      <td>Implement Matplotlib visualization with extracted Air-humidity-temperature sensor data in colab</td>
+      <td>Implement Matplotlib visualization with extracted AHT sensor data in colab</td>
+    </tr>
+    <tr>
+      <td><a href="./src/examples/ex24_data_analysis.ipynb">ex24_data_analysis.ipynb</a></td>
+      <td>Implement Data analysis with data.csv extracted by running 1.0.0-release in colab</td>
     </tr>
   </tbody>
 </table>
