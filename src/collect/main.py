@@ -128,7 +128,7 @@ BUTTON.irq(trigger=Pin.IRQ_FALLING, handler=button_handler)
 
 # main Asynchronous Function
 async def main():
-  WLAN_0.connect()
+  WLAN_0.connect(OLED)
   RTC.set_rtc_time()
   now = RTC.get_rtc_time()
   print(f"RTC Time: {now[0]}-{now[1]}-{now[2]} {now[4]}:{now[5]}:{now[6]}")
